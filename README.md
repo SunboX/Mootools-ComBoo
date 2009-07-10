@@ -17,6 +17,8 @@ Syntax
 
 <pre><code>var combo = new ComBoo('combobox1');</code></pre>
 
+
+
 <pre><code>$('combobox_linux').addEvent('change', function(){
 	alert(this.options[this.selectedIndex].value);
 });
@@ -28,7 +30,9 @@ Options
 
 className - (string: defaults to 'comBoo') CSS Class Name to attach to the generated ComBoo Box.
 
+
 container - (element: defaults to document.body) Element to place the ComBoo Box inside.
+
 
 License
 ---
