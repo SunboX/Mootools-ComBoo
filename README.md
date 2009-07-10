@@ -19,13 +19,13 @@ Syntax
 
 
 
-<pre><code>
+<pre>
 $('combobox_linux').addEvent('change', function(){
 	alert(this.options[this.selectedIndex].value);
 });
 
 new ComBoo('combobox_linux', {className: 'linuxCombobox'});
-</code></pre>
+</pre>
 
 
 Options
