@@ -1,59 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		
-		<link type="text/css" rel="stylesheet" href="../ComBoo.css" />
-		
-		<link type="text/css" rel="stylesheet" href="../demo/style.css" />
-		<link type="text/css" rel="stylesheet" href="../demo/linux/style.css" />
-		<link type="text/css" rel="stylesheet" href="../demo/glossy/style.css" />
-        
-		<script type="text/javascript" src="mootools-1.2.3-core.js"></script>
-		<script type="text/javascript" src="../ComBoo.js"></script>
-		<script type="text/javascript">
-			
-			window.addEvent('domready', function(){
-				
-				$('sectionID').addEvent('change', function(){
-					
-                	$('selected_value').set('text', 'Selected value: ' + this.options[this.options.selectedIndex].value);
-
-              	});
+        <link type="text/css" rel="stylesheet" href="../ComBoo.css" />
+        <link type="text/css" rel="stylesheet" href="../demo/style.css" />
+        <link type="text/css" rel="stylesheet" href="../demo/linux/style.css" />
+        <link type="text/css" rel="stylesheet" href="../demo/glossy/style.css" />
+        <script type="text/javascript" src="mootools-1.2.3-core.js">
+        </script>
+        <script type="text/javascript" src="../ComBoo.js">
+        </script>
+        <script type="text/javascript">
+            
+            window.addEvent('domready', function(){
+            
+                $('sectionID').addEvent('change', function(){
                 
-				new ComBoo('sectionID');
-
-              });
-			
-		</script>
-		
+                    $('selected_value').set('text', 'Selected value: ' + this.options[this.options.selectedIndex].value);
+                    
+                });
+                
+                new ComBoo('sectionID');
+                
+            });
+            
+        </script>
     </head>
     <body>
-		
-		<p>Get the Source at: <a href="http://github.com/SunboX/Mootools-ComBoo/">http://github.com/SunboX/Mootools-ComBoo/</a></p>
-		
-		<h1>Test 1</h1>
-		
-		<form>
-			<label for="sectionID">Select a value:</label>
-			
-			<select name="sectionID" id="sectionID" class="comboBoo">
-				<option value="">Empty</option>
-				<option value="35">Value 35</option>
-				<option value="39">Value 39</option>
-				<option value="32">Value 32</option>
-				<option value="41">Value 41</option>
-				<option value="44">Value 44</option>
-				<option value="31">Value 31</option>
-				<option value="37">Value 37</option>
-				<option value="34">Value 34</option>
-			</select>
-		</form>
-		
-		<br />
-		
-		<div id="selected_value"></div>
-		
+        <p>
+            Get the Source at: <a href="http://github.com/SunboX/Mootools-ComBoo/">http://github.com/SunboX/Mootools-ComBoo/</a>
+        </p>
+        <h1>Test 1</h1>
+        <form>
+            <label for="sectionID">
+                Select a value:
+            </label>
+            <select name="sectionID" id="sectionID" class="comboBoo">
+                <option value="">Empty</option>
+                <option value="35">Value 35</option>
+                <option value="39">Value 39</option>
+                <option value="32">Value 32</option>
+                <option value="41">Value 41</option>
+                <option value="44">Value 44</option>
+                <option value="31">Value 31</option>
+                <option value="37">Value 37</option>
+                <option value="34">Value 34</option>
+            </select>
+        </form>
+        <br/>
+        <div id="selected_value">
+        </div>
     </body>
 </html>
